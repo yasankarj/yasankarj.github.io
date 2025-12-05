@@ -57,34 +57,34 @@ function Contact() {
               <span className="info-icon">📧</span>
               <div>
                 <h3>Email</h3>
-                <p>your.email@example.com</p>
-              </div>
-            </div>
-            <div className="info-item">
-              <span className="info-icon">📱</span>
-              <div>
-                <h3>Phone</h3>
-                <p>+1 (555) 123-4567</p>
+                <p>yasankarj.online@gmail.com</p>
               </div>
             </div>
             <div className="info-item">
               <span className="info-icon">📍</span>
               <div>
-                <h3>Location</h3>
-                <p>San Francisco, CA</p>
+                <h3>Location (Work)</h3>
+                <p>Piliyandala, Colombo, Sri Lanka</p>
+              </div>
+            </div>
+            <div className="info-item">
+              <span className="info-icon">📍</span>
+              <div>
+                <h3>Location (Permanent)</h3>
+                <p>Badulla, Sri Lanka</p>
               </div>
             </div>
             <div className="social-links">
               <h3>Connect with me</h3>
               <div className="social-icons">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
+                <a href="https://www.linkedin.com/in/yasankajayawardane/" target="_blank" rel="noopener noreferrer" className="social-link">
                   LinkedIn
                 </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link">
+                <a href="https://github.com/yasankarj" target="_blank" rel="noopener noreferrer" className="social-link">
                   GitHub
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link">
-                  Twitter
+                <a href="https://www.tiktok.com/@yasankarj" target="_blank" rel="noopener noreferrer" className="social-link">
+                  Tiktok
                 </a>
               </div>
             </div>
