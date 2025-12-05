@@ -1,10 +1,15 @@
 import './Home.css'
+import ImageSlideshow from '../components/ImageSlideshow'
 
 function Home() {
   return (
     <div className="home">
       <section className="hero">
-        <div className="hero-content">
+        <div className="hero-container">
+          <div className="hero-slideshow">
+            <ImageSlideshow />
+          </div>
+          <div className="hero-content">
           <h1 className="hero-title">
             <span className="greeting">Hello, I'm</span>
             <span className="name">Yasanka Jayawardane</span>
@@ -18,6 +23,7 @@ function Home() {
           <div className="hero-buttons">
             <a href="#about" className="btn btn-primary">Learn More</a>
             <a href="/contact" className="btn btn-secondary">Get In Touch</a>
+          </div>
           </div>
         </div>
       </section>
