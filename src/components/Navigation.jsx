@@ -10,7 +10,7 @@ function Navigation() {
     <nav className="navigation">
       <div className="nav-container">
         <Link to="/" className="nav-logo">
-          Portfolio
+          YasankaRJ
         </Link>
         <ul className="nav-links">
           <li>
