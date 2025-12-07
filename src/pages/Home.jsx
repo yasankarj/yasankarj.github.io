@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Home.css'
 import ImageSlideshow from '../components/ImageSlideshow'
 
@@ -22,7 +23,7 @@ function Home() {
           </p>
           <div className="hero-buttons">
             <a href="#about" className="btn btn-primary">Learn More</a>
-            <a href="/contact" className="btn btn-secondary">Get In Touch</a>
+            <Link to="/contact" className="btn btn-secondary">Get In Touch</Link>
           </div>
           </div>
         </div>
