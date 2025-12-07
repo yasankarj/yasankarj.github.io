@@ -4,26 +4,47 @@ function Education() {
   const education = [
     {
       degree: "Master of Science in Computer Science",
-      institution: "University of Technology",
-      period: "2016 - 2018",
-      location: "Boston, MA",
-      description: "Specialized in Software Engineering and Machine Learning. Thesis on distributed systems.",
+      institution: "University of Moratuwa",
+      period: "2024 - present",
+      location: "Colombo, Sri Lanka",
+      description: "Specialized in Software Architecture. From the Department of Computer Science and Engineering, Faculty of Engineering, University of Moratuwa.",
       achievements: [
-        "Graduated with Honors (GPA: 3.8/4.0)",
-        "Published research paper on cloud computing",
-        "Teaching Assistant for Data Structures course"
+        "Currently studying",
+        "All the modules are completed, now working on the research project"
+      ],
+      links: []
+    },
+    {
+      degree: "Bachelor of Science in Engineering",
+      institution: "University of Moratuwa",
+      period: "2013 - 2017",
+      location: "Colombo, Sri Lanka",
+      description: "Focus on software development and algorithms. From the Department of Computer Engineering, Faculty of Engineering, University of Moratuwa.",
+      achievements: [
+        "3.18 / 4.20 GPA",
+        "Participated in numerous hackathons and coding competitions",
+        "Participated in extracurricular activities such as Techno Exhibition, Organizing events, etc."
+      ],
+      links: [
+        {
+          title: "Academic Transcript",
+          link: "https://lms.uom.lk/public/transcript.php?Key1=120268V&Key2=00824&Key3=A003106&Key4=113735"
+        }
       ]
     },
     {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "State University",
-      period: "2012 - 2016",
-      location: "Chicago, IL",
-      description: "Focus on software development and algorithms. Active member of the Computer Science Society.",
+      degree: "G.C.E.Advanced Level in Physical Science",
+      institution: "Central College, Bandarawela",
+      period: "2011",
+      location: "Bandarawela, Sri Lanka",
+      description: "I excelled in my A/L exam in my second attempt and I obtained the merit island rank.",
       achievements: [
-        "Dean's List: Fall 2014, Spring 2015",
-        "Won Hackathon competition in 2015",
-        "President of Computer Science Club"
+        "Physics - A",
+        "Combined Maths - A",
+        "Chemistry - B",
+        "Z-score - 2.1752",
+        "Island Rank - 55",
+        "District Rank - 2"
       ]
     }
   ]
@@ -50,6 +71,15 @@ function Education() {
                   ))}
                 </ul>
               </div>
+              {edu.links && edu.links.length > 0 && (
+                <div className="education-links">
+                  {edu.links.map((link, i) => (
+                    <a key={i} href={link.link} target="_blank" rel="noopener noreferrer">
+                      {link.title}
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>
