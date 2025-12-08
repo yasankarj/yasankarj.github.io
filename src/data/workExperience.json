@@ -1,11 +1,11 @@
 {
   "experiences": [
     {
-      "title": "Senior Software Engineer",
-      "company": "Tech Company Inc.",
-      "period": "2022 - Present",
-      "location": "San Francisco, CA",
-      "shortDescription": "Leading development of scalable web applications and mentoring junior developers.",
+      "title": "Tech Lead",
+      "company": "99X",
+      "period": "2022, August - Present",
+      "location": "Colombo, Sri Lanka",
+      "shortDescription": "After working more than half a decade in Product Based Software Company, working with 99X, which is a service based software company, I have gained a lot of experience in cutting edge technologies and best practices.",
       "longDescription": [
         "Led development of scalable web applications using React and Node.js",
         "Mentored junior developers and conducted code reviews",
@@ -14,100 +14,196 @@
         "Architected microservices infrastructure for better scalability",
         "Implemented CI/CD pipelines reducing deployment time by 50%"
       ],
-      "techStack": ["React", "Node.js", "TypeScript", "AWS", "Docker", "Kubernetes", "PostgreSQL", "MongoDB"],
+      "techStack": ["Go (Golang)", "Node.js", "React", "AWS", "Docker", "GitLab CI/CD", "Kubernetes", "MySQL", "linear.app", "PHP", "Symfony", "Angular", "TypeScript", "Doctrine", "MySQL", "Webhook integrations"],
       "projects": [
         {
-          "name": "E-Commerce Platform",
+          "name": "No Isolation",
           "actions": [
-            "Led development of scalable web applications using React and Node.js",
-            "Architected microservices infrastructure for better scalability",
-            "Improved application performance by 40% through optimization",
-            "Implemented CI/CD pipelines reducing deployment time by 50%"
+            "Industry: EdTech / Learning Platforms",
+            "Location: Norway",
+            "Duration: 1 year – Present",
+            "Role: Technical Lead",
+            "Led the architectural revamp of a complex microservices-based learning platform.",
+            "The existing system suffered from an overly granular microservices structure, creating high maintenance and operational overhead.",
+            "I redesigned the architecture using Bounded Context principles to consolidate and streamline services, improving maintainability, scalability, and system stability.",
+            "Additionally, coming from a PHP/Symfony background, I rapidly upskilled in Go (Golang) to meet project needs. Within a short period, I fully adapted to Go and successfully led backend development using it—demonstrating strong technical flexibility and the ability to master new technologies quickly."
           ],
-          "techStack": ["React", "Node.js", "TypeScript", "AWS", "Docker", "PostgreSQL"]
+          "techStack": ["Go (Golang)", "Node.js", "React", "AWS", "Docker", "GitLab CI/CD", "Kubernetes", "MySQL", "linear.app"]
         },
         {
-          "name": "Internal Dashboard System",
+          "name": "Carcare",
           "actions": [
-            "Mentored junior developers and conducted code reviews",
-            "Collaborated with cross-functional teams to deliver high-quality products",
-            "Built real-time analytics features using WebSockets"
+            "Industry: Automotive / Dealership Management Systems",
+            "Location: Sweden",
+            "Duration: 2.5 years",
+            "Role: Technical Lead",
+            "Technical Lead for Carcare, a leading dealership management system (DMS) provider operating across Sweden, Finland, and Norway.",
+            "The platform helps automotive dealerships reduce vehicle lead time—from procurement to sale.",
+            "Led the architectural revamp of a complex microservices-based automotive dealership management system.",
+            "I oversaw development across key product modules, including Used Vehicles, New Vehicles, Purchase Analysis, and Market Insights, driving improvements in reliability, scalability, and user experience."
           ],
-          "techStack": ["React", "TypeScript", "Kubernetes", "MongoDB", "WebSocket"]
+          "techStack": ["PHP", "Symfony", "Angular", "TypeScript", "Doctrine", "MySQL", "Webhook integrations"]
+        }
+      ]
+    },
+    {
+      "title": "Associate Tech Lead",
+      "company": "OrangeHRM",
+      "period": "2021 - 2022",
+      "location": "Colombo, Sri Lanka",
+      "shortDescription": "Led the OrangeHRM Integration Team and Mobile Development Team. And worked in Enterprise and Customization team as a full stack developer.",
+      "longDescription": [
+        "Technical Lead in the OrangeHRM Integration Development Team",
+        "Technical Lead in the OrangeHRM Mobile Development Team",
+        "Full Stack Developer in the Enterprise and Customization team",
+        "Conducted training programs for new joiners",
+        "Interviewing Candidates and contributing to the recruitment process"
+      ],
+      "techStack": ["React Native", "Firebase", "Google Maps API", "JavaScript", "PHP Symfony", "GitLab CI/CD", "Doctrine ORM", "Celigo iPaaS", "AngularJS", "SimpleSAMLPHP", "SAML 2.0"],
+      "projects": [
+        {
+          "name": "OrangeHRM Integration Development Team",
+          "actions": [
+            "Analyzing competitive iPaaS platforms and suggesting the best platform to implement integration solutions with OrangeHRM and other applications.",
+            "Implement OrangeHRM and Bizpay payroll integration on Celigo",
+            "Implement OrangeHRM and iSpring integration on Celigo",
+            "Standardizing the development process in the Integration Development Team",
+            "Identify OrangeHRM product development to cater to Integration and develop them on OrangeHRM products under the Enterprise Development Team"
+          ],
+          "techStack": ["Celigo iPaaS", "JavaScript", "PHP Symfony", "GitLab CI/CD", "Doctrine ORM"]
+        },
+        {
+          "name": "Technical Lead in the OrangeHRM Mobile Development Team",
+          "actions": [
+            "Implement the OrangeHRM Advanced mobile app in both Android and iOS which will connect to the OrangeHRM Enterprise product via REST APIs.",
+            "Define Team Goals and maintain Performance indexes of the development team.",
+            "Unit Tests with Jest and coding standards with eslint.",
+            "Prepare development effort estimates.",
+            "Conduct code reviews and monitor code quality.",
+            "Implement Single Sign On configured in OrangeHRM Enterprise on OrangeHRM Mobile App for SAML and OpenID protocols.",
+            "Set up Gitlab Community Edition in OrangeHRM servers and implement CI/CD in Gitlab for unit tests, linting, code coverage and build creation.",
+            "Analyze product bugs and provide necessary fixes"
+          ],
+          "techStack": ["React Native", "Firebase", "Google Maps API", "JavaScript", "PHP Symfony", "GitLab CI/CD", "Doctrine ORM"]
+        },
+        {
+          "name": "Full Stack Developer in the Enterprise and Customization team",
+          "actions": [
+            "Implement REST APIs for Timesheet Projects and Activities in PHP Symfony",
+            "Implement front-end views for Timesheet Projects and Activities in AngularJS",
+            "Implement OrangeHRM as an Identity Provider using SimpleSAMLPHP in the PHP Symfony backend application using the SAML 2.0 protocol",
+            "Implement IdP-initiated SAML Authentication and SP Initiate SAML Authentication in Symfony backend application using SAML 2.0 protocol",
+            "Followed Agile Software Development practices with Test Driven Development approach."
+          ],
+          "techStack": ["AngularJS", "SimpleSAMLPHP", "SAML 2.0", "JavaScript", "PHP Symfony", "GitLab CI/CD", "Doctrine ORM"]
+        }
+      ]
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "OrangeHRM",
+      "period": "2019 - 2021",
+      "location": "Colombo, Sri Lanka",
+      "shortDescription": "While working as a full stack developer in the Customization Team, played a role of a support engineer and a technical lead in the Mobile Development Team.",
+      "longDescription": [
+        "Technical Lead  in the OrangeHRM Mobile Development Team.",
+        "Senior Software Engineer in Customization Team.",
+        "Senior Software Engineer in the Support Team",
+        "Interviewing Candidates and contributing to the recruitment process",
+        "Conduct training programs for new joins"
+      ],
+      "techStack": ["React Native", "Firebase", "Google Maps API", "JavaScript", "PHP Symfony", "Doctrine ORM"],
+      "projects": [
+        {
+          "name": "Senior Software Engineer in Customization Team",
+          "actions": [
+            "Providing Customized solutions for Platinum Clients.",
+            "Implement customized feature improvements in PIM, Leave, Attendance, Time, and Performance modules both back-end and front-end with PHP Symfony, AngularJS.",
+            "PHP Latest version compatibility upgrades - upgrading existing custom client instances into the latest PHP version (PHP 7.2) with necessary code improvements, library upgrades, and bug fixes.",
+            "Test Driven Development for functional testing with PHPUnit and Integration tests with codeception.",
+            "Custom Client Upgrades - Upgrading the Custom Client instances to the latest OrangeHRM base production version by forward porting the customized features"
+          ],
+          "techStack": ["JavaScript", "React", "HTML", "CSS"]
+        },
+        {
+          "name": "Senior Software Engineer in the Support Team",
+          "actions": [
+            "Work a night shift from 2019 May to 2019 December to engage with clients in the North American region",
+            "Implement hotfixes for clients with PHP, Angular, and MySQL",
+            "Deploy hotfixes for QA",
+            "Deploy hotfixes for Client Instances in OrangeHRM servers including file replacements, and query execution adhering to OrangeHRM support standards.",
+            "Engaging with clients to gather more information on the issues reported by them via Zoho, Zoom, and Teamviewer."
+          ],
+          "techStack": ["JavaScript", "React", "Git", "REST APIs"]
         }
       ]
     },
     {
       "title": "Software Engineer",
-      "company": "StartupXYZ",
-      "period": "2020 - 2022",
-      "location": "Remote",
-      "shortDescription": "Developed and maintained full-stack applications with focus on performance and user experience.",
+      "company": "OrangeHRM",
+      "period": "January 2018 - January 2019",
+      "location": "Colombo, Sri Lanka",
+      "shortDescription": "While working as a full stack developer in the Customization Team, played a role of a support engineer and a technical lead in the Mobile Development Team.",
       "longDescription": [
-        "Developed and maintained full-stack applications",
-        "Implemented RESTful APIs and database schemas",
-        "Participated in agile development processes",
-        "Contributed to product planning and technical decisions",
-        "Optimized database queries improving response times by 35%",
-        "Built real-time features using WebSockets"
+        "Technical Lead  in the OrangeHRM Mobile Development Team.",
+        "Senior Software Engineer in Customization Team.",
+        "Senior Software Engineer in the Support Team",
+        "Interviewing Candidates and contributing to the recruitment process",
+        "Conduct training programs for new joins"
       ],
-      "techStack": ["JavaScript", "Python", "Django", "React", "PostgreSQL", "Redis", "Git"],
+      "techStack": ["React Native", "Firebase", "Google Maps API", "JavaScript", "PHP Symfony", "Doctrine ORM"],
       "projects": [
         {
-          "name": "Customer Portal",
+          "name": "Senior Software Engineer in Customization Team",
           "actions": [
-            "Developed and maintained full-stack applications",
-            "Implemented RESTful APIs and database schemas",
-            "Optimized database queries improving response times by 35%"
-          ],
-          "techStack": ["JavaScript", "Python", "Django", "PostgreSQL", "Redis"]
-        },
-        {
-          "name": "Real-time Chat Application",
-          "actions": [
-            "Built real-time features using WebSockets",
-            "Participated in agile development processes",
-            "Contributed to product planning and technical decisions"
-          ],
-          "techStack": ["React", "Node.js", "WebSocket", "Redis", "Git"]
-        }
-      ]
-    },
-    {
-      "title": "Junior Developer",
-      "company": "Digital Solutions",
-      "period": "2018 - 2020",
-      "location": "New York, NY",
-      "shortDescription": "Built responsive web interfaces and implemented new features using modern JavaScript frameworks.",
-      "longDescription": [
-        "Built responsive web interfaces using modern JavaScript frameworks",
-        "Fixed bugs and implemented new features",
-        "Worked closely with designers to implement UI/UX designs",
-        "Learned best practices in software development",
-        "Participated in code reviews and team meetings",
-        "Contributed to improving code quality and documentation"
-      ],
-      "techStack": ["JavaScript", "React", "HTML", "CSS", "Git", "REST APIs"],
-      "projects": [
-        {
-          "name": "Company Website Redesign",
-          "actions": [
-            "Built responsive web interfaces using modern JavaScript frameworks",
-            "Worked closely with designers to implement UI/UX designs",
-            "Fixed bugs and implemented new features"
+            "Providing Customized solutions for Platinum Clients.",
+            "Implement customized feature improvements in PIM, Leave, Attendance, Time, and Performance modules both back-end and front-end with PHP Symfony, AngularJS.",
+            "PHP Latest version compatibility upgrades - upgrading existing custom client instances into the latest PHP version (PHP 7.2) with necessary code improvements, library upgrades, and bug fixes.",
+            "Test Driven Development for functional testing with PHPUnit and Integration tests with codeception.",
+            "Custom Client Upgrades - Upgrading the Custom Client instances to the latest OrangeHRM base production version by forward porting the customized features"
           ],
           "techStack": ["JavaScript", "React", "HTML", "CSS"]
         },
         {
-          "name": "Internal Tools",
+          "name": "Senior Software Engineer in the Support Team",
           "actions": [
-            "Learned best practices in software development",
-            "Participated in code reviews and team meetings",
-            "Contributed to improving code quality and documentation"
+            "Work a night shift from 2019 May to 2019 December to engage with clients in the North American region",
+            "Implement hotfixes for clients with PHP, Angular, and MySQL",
+            "Deploy hotfixes for QA",
+            "Deploy hotfixes for Client Instances in OrangeHRM servers including file replacements, and query execution adhering to OrangeHRM support standards.",
+            "Engaging with clients to gather more information on the issues reported by them via Zoho, Zoom, and Teamviewer."
           ],
           "techStack": ["JavaScript", "React", "Git", "REST APIs"]
         }
       ]
+    },
+    {
+      "title": "Associate Software Engineer",
+      "company": "OrangeHRM",
+      "period": "March 2017 - JANUARY 2018",
+      "location": "Colombo, Sri Lanka",
+      "shortDescription": "Software Engineer in Customization Team.",
+      "longDescription": [
+        "Providing Customized solutions for Platinum Clients.",
+        "Implement customized feature improvements in PIM, Leave, Attendance, Time, and Performance modules both back-end and frontend with PHP Symfony, AngularJS.",
+        "Custom Client Upgrades - Upgrading the Custom Client instances to the latest OrangeHRM base production version by forward porting the customized features.",
+        "Redhat Phase 9 - One of the most valuable clients of OrangeHRM with complex leave module customizations with XML-based leave rules.",
+        "Test Driven Development for functional testing with PHPUnit."
+      ],
+      "techStack": ["JavaScript", "PHP Symfony", "Doctrine ORM"]
+    }
+    ,
+    {
+      "title": "Software Engineer Intern",
+      "company": "OrangeHRM",
+      "period": "October 2015 - April 2016",
+      "location": "Colombo, Sri Lanka",
+      "shortDescription": "Software Engineer Intern in Enterprise Team.",
+      "longDescription": [
+        "Project Eagle - Non core module conversion.",
+        "The existing identified features such as the Training Module, Asset Tracker, Discipline Module, and Onboarding Module have to be converted into Material Design adhering to UI guidelines given by the consultant."
+      ],
+      "techStack": ["JQuery", "Bootstrap", "Materialize CSS", "JavaScript", "PHP Symfony", "Doctrine ORM"]
     }
   ]
 }
