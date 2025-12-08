@@ -12,6 +12,14 @@ function ImageSlideshow() {
 
   const [currentIndex, setCurrentIndex] = useState(0)
 
+  // Preload all images for caching
+  useEffect(() => {
+    images.forEach((imageSrc) => {
+      const img = new Image()
+      img.src = imageSrc
+    })
+  }, [])
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
@@ -43,6 +51,8 @@ function ImageSlideshow() {
             <img
               src={image}
               alt={`Slide ${index + 1}`}
+              loading={index === 0 ? "eager" : "lazy"}
+              decoding="async"
               onError={(e) => {
                 // Fallback to placeholder if image doesn't exist
                 e.target.style.display = 'none'
