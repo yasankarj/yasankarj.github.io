@@ -39,14 +39,6 @@ function Navigation() {
           </li>
           <li>
             <Link 
-              to="/projects" 
-              className={isActive('/projects') ? 'active' : ''}
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link 
               to="/contact" 
               className={isActive('/contact') ? 'active' : ''}
             >
