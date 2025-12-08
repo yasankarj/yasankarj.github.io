@@ -1,59 +1,10 @@
 import { useState } from 'react'
+import workExperienceData from '../data/workExperience.json'
 import './WorkExperience.css'
 
 function WorkExperience() {
   const [selectedExperience, setSelectedExperience] = useState(null)
-
-  const experiences = [
-    {
-      title: "Senior Software Engineer",
-      company: "Tech Company Inc.",
-      period: "2022 - Present",
-      location: "San Francisco, CA",
-      shortDescription: "Leading development of scalable web applications and mentoring junior developers.",
-      longDescription: [
-        "Led development of scalable web applications using React and Node.js",
-        "Mentored junior developers and conducted code reviews",
-        "Collaborated with cross-functional teams to deliver high-quality products",
-        "Improved application performance by 40% through optimization",
-        "Architected microservices infrastructure for better scalability",
-        "Implemented CI/CD pipelines reducing deployment time by 50%"
-      ],
-      techStack: ["React", "Node.js", "TypeScript", "AWS", "Docker", "Kubernetes", "PostgreSQL", "MongoDB"]
-    },
-    {
-      title: "Software Engineer",
-      company: "StartupXYZ",
-      period: "2020 - 2022",
-      location: "Remote",
-      shortDescription: "Developed and maintained full-stack applications with focus on performance and user experience.",
-      longDescription: [
-        "Developed and maintained full-stack applications",
-        "Implemented RESTful APIs and database schemas",
-        "Participated in agile development processes",
-        "Contributed to product planning and technical decisions",
-        "Optimized database queries improving response times by 35%",
-        "Built real-time features using WebSockets"
-      ],
-      techStack: ["JavaScript", "Python", "Django", "React", "PostgreSQL", "Redis", "Git"]
-    },
-    {
-      title: "Junior Developer",
-      company: "Digital Solutions",
-      period: "2018 - 2020",
-      location: "New York, NY",
-      shortDescription: "Built responsive web interfaces and implemented new features using modern JavaScript frameworks.",
-      longDescription: [
-        "Built responsive web interfaces using modern JavaScript frameworks",
-        "Fixed bugs and implemented new features",
-        "Worked closely with designers to implement UI/UX designs",
-        "Learned best practices in software development",
-        "Participated in code reviews and team meetings",
-        "Contributed to improving code quality and documentation"
-      ],
-      techStack: ["JavaScript", "React", "HTML", "CSS", "Git", "REST APIs"]
-    }
-  ]
+  const experiences = workExperienceData.experiences
 
   const openModal = (exp) => {
     setSelectedExperience(exp)
@@ -112,17 +63,42 @@ function WorkExperience() {
             <h3 className="modal-company">{selectedExperience.company}</h3>
             <p className="modal-location">{selectedExperience.location}</p>
             
-            <div className="modal-section">
-              <h4>Description</h4>
-              <ul className="modal-description">
-                {selectedExperience.longDescription.map((item, i) => (
-                  <li key={i}>{item}</li>
+            {selectedExperience.longDescription && selectedExperience.longDescription.length > 0 && (
+              <div className="modal-section">
+                <h4>Overview</h4>
+                <ul className="modal-description">
+                  {selectedExperience.longDescription.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {selectedExperience.projects && selectedExperience.projects.length > 0 && (
+              <div className="modal-section">
+                <h4>Projects</h4>
+                {selectedExperience.projects.map((project, projectIndex) => (
+                  <div key={projectIndex} className="project-detail">
+                    <h5 className="project-name">{project.name}</h5>
+                    <ul className="project-actions">
+                      {project.actions.map((action, actionIndex) => (
+                        <li key={actionIndex}>{action}</li>
+                      ))}
+                    </ul>
+                    {project.techStack && project.techStack.length > 0 && (
+                      <div className="project-tech-stack">
+                        {project.techStack.map((tech, techIndex) => (
+                          <span key={techIndex} className="tech-item-small">{tech}</span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 ))}
-              </ul>
-            </div>
+              </div>
+            )}
 
             <div className="modal-section">
-              <h4>Tech Stack</h4>
+              <h4>Overall Tech Stack</h4>
               <div className="tech-stack">
                 {selectedExperience.techStack.map((tech, i) => (
                   <span key={i} className="tech-item">{tech}</span>

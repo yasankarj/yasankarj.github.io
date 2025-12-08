@@ -1,0 +1,114 @@
+{
+  "experiences": [
+    {
+      "title": "Senior Software Engineer",
+      "company": "Tech Company Inc.",
+      "period": "2022 - Present",
+      "location": "San Francisco, CA",
+      "shortDescription": "Leading development of scalable web applications and mentoring junior developers.",
+      "longDescription": [
+        "Led development of scalable web applications using React and Node.js",
+        "Mentored junior developers and conducted code reviews",
+        "Collaborated with cross-functional teams to deliver high-quality products",
+        "Improved application performance by 40% through optimization",
+        "Architected microservices infrastructure for better scalability",
+        "Implemented CI/CD pipelines reducing deployment time by 50%"
+      ],
+      "techStack": ["React", "Node.js", "TypeScript", "AWS", "Docker", "Kubernetes", "PostgreSQL", "MongoDB"],
+      "projects": [
+        {
+          "name": "E-Commerce Platform",
+          "actions": [
+            "Led development of scalable web applications using React and Node.js",
+            "Architected microservices infrastructure for better scalability",
+            "Improved application performance by 40% through optimization",
+            "Implemented CI/CD pipelines reducing deployment time by 50%"
+          ],
+          "techStack": ["React", "Node.js", "TypeScript", "AWS", "Docker", "PostgreSQL"]
+        },
+        {
+          "name": "Internal Dashboard System",
+          "actions": [
+            "Mentored junior developers and conducted code reviews",
+            "Collaborated with cross-functional teams to deliver high-quality products",
+            "Built real-time analytics features using WebSockets"
+          ],
+          "techStack": ["React", "TypeScript", "Kubernetes", "MongoDB", "WebSocket"]
+        }
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "StartupXYZ",
+      "period": "2020 - 2022",
+      "location": "Remote",
+      "shortDescription": "Developed and maintained full-stack applications with focus on performance and user experience.",
+      "longDescription": [
+        "Developed and maintained full-stack applications",
+        "Implemented RESTful APIs and database schemas",
+        "Participated in agile development processes",
+        "Contributed to product planning and technical decisions",
+        "Optimized database queries improving response times by 35%",
+        "Built real-time features using WebSockets"
+      ],
+      "techStack": ["JavaScript", "Python", "Django", "React", "PostgreSQL", "Redis", "Git"],
+      "projects": [
+        {
+          "name": "Customer Portal",
+          "actions": [
+            "Developed and maintained full-stack applications",
+            "Implemented RESTful APIs and database schemas",
+            "Optimized database queries improving response times by 35%"
+          ],
+          "techStack": ["JavaScript", "Python", "Django", "PostgreSQL", "Redis"]
+        },
+        {
+          "name": "Real-time Chat Application",
+          "actions": [
+            "Built real-time features using WebSockets",
+            "Participated in agile development processes",
+            "Contributed to product planning and technical decisions"
+          ],
+          "techStack": ["React", "Node.js", "WebSocket", "Redis", "Git"]
+        }
+      ]
+    },
+    {
+      "title": "Junior Developer",
+      "company": "Digital Solutions",
+      "period": "2018 - 2020",
+      "location": "New York, NY",
+      "shortDescription": "Built responsive web interfaces and implemented new features using modern JavaScript frameworks.",
+      "longDescription": [
+        "Built responsive web interfaces using modern JavaScript frameworks",
+        "Fixed bugs and implemented new features",
+        "Worked closely with designers to implement UI/UX designs",
+        "Learned best practices in software development",
+        "Participated in code reviews and team meetings",
+        "Contributed to improving code quality and documentation"
+      ],
+      "techStack": ["JavaScript", "React", "HTML", "CSS", "Git", "REST APIs"],
+      "projects": [
+        {
+          "name": "Company Website Redesign",
+          "actions": [
+            "Built responsive web interfaces using modern JavaScript frameworks",
+            "Worked closely with designers to implement UI/UX designs",
+            "Fixed bugs and implemented new features"
+          ],
+          "techStack": ["JavaScript", "React", "HTML", "CSS"]
+        },
+        {
+          "name": "Internal Tools",
+          "actions": [
+            "Learned best practices in software development",
+            "Participated in code reviews and team meetings",
+            "Contributed to improving code quality and documentation"
+          ],
+          "techStack": ["JavaScript", "React", "Git", "REST APIs"]
+        }
+      ]
+    }
+  ]
+}
+
