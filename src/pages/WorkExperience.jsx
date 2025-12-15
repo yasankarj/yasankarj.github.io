@@ -27,7 +27,7 @@ function WorkExperience() {
                   <h2 className="experience-title">{exp.title}</h2>
                   <span className="experience-period">{exp.period}</span>
                 </div>
-                <h3 className="experience-company">{exp.company}</h3>
+                <h3 className="experience-company"><a href={exp.link} target="_blank" rel="noopener noreferrer">{exp.company}</a></h3>
                 <p className="experience-location">{exp.location}</p>
                 <p className="experience-short-description">{exp.shortDescription}</p>
                 {exp.techStack && exp.techStack.length > 0 && (
@@ -60,7 +60,7 @@ function WorkExperience() {
               <h2 className="modal-title">{selectedExperience.title}</h2>
               <span className="modal-period">{selectedExperience.period}</span>
             </div>
-            <h3 className="modal-company">{selectedExperience.company}</h3>
+            <h3 className="modal-company"><a href={selectedExperience.link} target="_blank" rel="noopener noreferrer">{selectedExperience.company}</a></h3>
             <p className="modal-location">{selectedExperience.location}</p>
             
             {selectedExperience.longDescription && selectedExperience.longDescription.length > 0 && (
