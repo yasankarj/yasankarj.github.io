@@ -1,5 +1,6 @@
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Navigation from './components/Navigation'
+import ConsentBanner from './components/ConsentBanner'
 import Home from './pages/Home'
 import WorkExperience from './pages/WorkExperience'
 import Education from './pages/Education'
@@ -8,12 +9,16 @@ import Contact from './pages/Contact'
 import './App.css'
 import { useEffect } from "react";
 import { pageview } from "./analytics";
+import { getConsent } from "./utils/consent";
 
 function AppContent() {
   const location = useLocation();
 
   useEffect(() => {
-    pageview(location.pathname);
+    // Only track pageview if user has consented
+    if (getConsent()) {
+      pageview(location.pathname);
+    }
   }, [location]);
 
   return (
@@ -27,6 +32,7 @@ function AppContent() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
+      <ConsentBanner />
     </div>
   );
 }

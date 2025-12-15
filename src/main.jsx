@@ -2,6 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import { getConsent, loadGoogleAnalytics } from './utils/consent'
+
+// Load Google Analytics if user previously consented
+if (getConsent()) {
+  loadGoogleAnalytics();
+}
 
 // Register service worker for image caching
 if ('serviceWorker' in navigator) {
