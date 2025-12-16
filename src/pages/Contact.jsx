@@ -30,7 +30,22 @@ function Contact() {
       } else {
         const data = await response.json()
         if (data.errors) {
-          setStatus('Oops! There was an error: ' + data.errors.map(error => error.message).join(', '))
+          // Sanitize error messages to prevent XSS
+          const sanitizedErrors = data.errors
+            .map(error => {
+              if (error && error.message) {
+                // Remove potentially dangerous characters and limit length
+                return String(error.message)
+                  .replace(/[<>"']/g, '')
+                  .substring(0, 200);
+              }
+              return '';
+            })
+            .filter(msg => msg.length > 0);
+          
+          setStatus(sanitizedErrors.length > 0 
+            ? 'Oops! There was an error: ' + sanitizedErrors.join(', ')
+            : 'Oops! An unknown error occurred.')
         } else {
           setStatus('Oops! There was a problem submitting your form. Please try again.')
         }
