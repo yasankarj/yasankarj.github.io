@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github-personal/yasankarj/yasankarj.github.io/compare/v1.1.0...v1.2.0) (2025-12-16)
+
+
+### Features
+
+* added company links in work experience page ([c491a21](https://github-personal/yasankarj/yasankarj.github.io/commit/c491a21bc9ff34241f64f729cb37774ffd875a53))
+* added google analytics ([6cfa300](https://github-personal/yasankarj/yasankarj.github.io/commit/6cfa3008392096f36bff205c44d7f42bf33b05b6))
+* analytics improved ([0ca11e3](https://github-personal/yasankarj/yasankarj.github.io/commit/0ca11e3d73bbd69a7e3b50ca8c57325965947b47))
+* consent based analytics ([f289bcd](https://github-personal/yasankarj/yasankarj.github.io/commit/f289bcd01f45d452b64abe2671e6ad62a636c049))
+* implement some security improvements ([d65f07c](https://github-personal/yasankarj/yasankarj.github.io/commit/d65f07c6e737123fdcebb340c8d4a98a5c134732))
+* improved education page for proper usage. ([2d97d86](https://github-personal/yasankarj/yasankarj.github.io/commit/2d97d868d08df84e34d427c33f26179ca635cb22))
+* improved home page ([3b97dcd](https://github-personal/yasankarj/yasankarj.github.io/commit/3b97dcd34030edc73fd6a5d3a05c8bfb863406c7))
+* remove console logs from code and add it into a logger utility ([4e865e0](https://github-personal/yasankarj/yasankarj.github.io/commit/4e865e08d3740812a1e375bfaab3e7c29aeea318))
+
 ## 1.1.0 (2025-12-08)
 
 
