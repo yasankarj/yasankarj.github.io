@@ -1,0 +1,62 @@
+{
+  "education": [
+    {
+      "degree": "Master of Science in Computer Science",
+      "institution": "University of Moratuwa",
+      "period": "2024 - present",
+      "location": "Colombo, Sri Lanka",
+      "description": "Specialized in Software Architecture. From the Department of Computer Science and Engineering, Faculty of Engineering, University of Moratuwa.",
+      "achievements": [
+        "Currently studying",
+        "All the modules are completed, now working on the research project"
+      ],
+      "links": []
+    },
+    {
+      "degree": "Bachelor of Science in Engineering",
+      "institution": "University of Moratuwa",
+      "period": "2013 - 2017",
+      "location": "Colombo, Sri Lanka",
+      "description": "Focus on software development and algorithms. From the Department of Computer Engineering, Faculty of Engineering, University of Moratuwa.",
+      "achievements": [
+        "3.18 / 4.20 GPA",
+        "Participated in numerous hackathons and coding competitions",
+        "Participated in extracurricular activities such as Techno Exhibition, Organizing events, etc."
+      ],
+      "links": [
+        {
+          "title": "Academic Transcript",
+          "link": "https://lms.uom.lk/public/transcript.php?Key1=120268V&Key2=00824&Key3=A003106&Key4=113735"
+        }
+      ]
+    },
+    {
+      "degree": "G.C.E.Advanced Level in Physical Science",
+      "institution": "Central College, Bandarawela",
+      "period": "2008 - 2010",
+      "location": "Bandarawela, Sri Lanka",
+      "description": "I excelled in my A/L exam in my second attempt and I obtained the merit island rank.",
+      "achievements": [
+        "Physics - A",
+        "Combined Maths - A",
+        "Chemistry - B",
+        "Z-score - 2.1752",
+        "Island Rank - 55",
+        "District Rank - 2"
+      ],
+      "links": []
+    },
+    {
+      "degree": "G.C.E.Ordinary Level",
+      "institution": "S. Thomas' College, Bandarawela",
+      "period": "1997 - 2008",
+      "location": "Bandarawela, Sri Lanka",
+      "description": "I studied at S. Thomas' College, Bandarawela for my O/L exam since grade 1.",
+      "achievements": [
+        "G.C.E.O/L - 7 A's, 2 B's, 1 C"
+      ],
+      "links": []
+    }
+  ]
+}
+
