@@ -1,4 +1,5 @@
 import { getConsent } from './utils/consent';
+import { logger } from './utils/logger';
 
 // Get GA tracking ID from environment variable with fallback
 const getGATrackingId = () => {
@@ -30,7 +31,8 @@ export const pageview = (url) => {
         page_path: sanitizedUrl,
       });
     } catch (error) {
-      console.warn('Failed to track pageview:', error);
+      // Silently fail in production, log only in development
+      logger.warn('Failed to track pageview:', error);
     }
   }
 };

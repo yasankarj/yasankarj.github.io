@@ -1,3 +1,5 @@
+import { logger } from './logger';
+
 const CONSENT_KEY = 'analytics_consent';
 const GA_SCRIPT_LOADED_KEY = 'ga_script_loaded';
 
@@ -23,7 +25,8 @@ export const getConsent = () => {
     return consent === 'true';
   } catch (error) {
     // Handle localStorage errors (e.g., disabled in private mode)
-    console.warn('Failed to read consent from localStorage:', error);
+    // Silently fail in production, log only in development
+    logger.warn('Failed to read consent from localStorage:', error);
     return null;
   }
 };
@@ -43,7 +46,8 @@ export const setConsent = (consented) => {
     }
   } catch (error) {
     // Handle localStorage errors
-    console.warn('Failed to save consent to localStorage:', error);
+    // Silently fail in production, log only in development
+    logger.warn('Failed to save consent to localStorage:', error);
   }
 };
 
@@ -52,7 +56,8 @@ export const hasConsentDecision = () => {
   try {
     return localStorage.getItem(CONSENT_KEY) !== null;
   } catch (error) {
-    console.warn('Failed to check consent decision:', error);
+    // Silently fail in production, log only in development
+    logger.warn('Failed to check consent decision:', error);
     return false;
   }
 };
@@ -76,7 +81,8 @@ export const loadGoogleAnalytics = () => {
   
   // Validate tracking ID format (basic check)
   if (!trackingId || !/^G-[A-Z0-9]+$/.test(trackingId)) {
-    console.error('Invalid Google Analytics tracking ID format');
+    // Silently fail in production, log only in development
+    logger.error('Invalid Google Analytics tracking ID format');
     return;
   }
   
@@ -86,7 +92,8 @@ export const loadGoogleAnalytics = () => {
   script.src = `https://www.googletagmanager.com/gtag/js?id=${trackingId}`;
   
   script.onerror = () => {
-    console.error('Failed to load Google Analytics script');
+    // Silently fail in production, log only in development
+    logger.error('Failed to load Google Analytics script');
   };
   
   script.onload = () => {
@@ -94,7 +101,8 @@ export const loadGoogleAnalytics = () => {
     try {
       sessionStorage.setItem(GA_SCRIPT_LOADED_KEY, 'true');
     } catch (error) {
-      console.warn('Failed to save GA load status:', error);
+      // Silently fail in production, log only in development
+      logger.warn('Failed to save GA load status:', error);
     }
   };
   

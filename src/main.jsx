@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { getConsent, loadGoogleAnalytics } from './utils/consent'
+import { logger } from './utils/logger'
 
 // Load Google Analytics if user previously consented
 if (getConsent()) {
@@ -14,10 +15,12 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js')
       .then((registration) => {
-        console.log('Service Worker registered:', registration.scope)
+        // Log only in development
+        logger.log('Service Worker registered:', registration.scope)
       })
       .catch((error) => {
-        console.log('Service Worker registration failed:', error)
+        // Silently fail in production, log only in development
+        logger.log('Service Worker registration failed:', error)
       })
   })
 }
