@@ -37,10 +37,10 @@ function Home() {
               I'm a technical lead with closer to nine years of experience in the industry (excluding my internship). I have worked with a variety of technologies and frameworks, and I am always looking to learn new things.
             </p>
             <p>
-              I proudly call myself a family man. I am married to a wonderful wife and we have a little boy. My free time is mostly spent with my family, and I love to play some guitar and watch Netflix whenever I get the chance.
+              With my experience on both service based and product based companies, I have a good understanding of the different approaches to software development.
             </p>
             <p>
-              With my experience on both service based and product based companies, I have a good understanding of the different approaches to software development.
+              I proudly call myself a family man. I am married to a wonderful wife and we have a little boy. My free time is mostly spent with my family, and I love to play some guitar and watch Netflix whenever I get the chance.
             </p>
           </div>
         </div>
