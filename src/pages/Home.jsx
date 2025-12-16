@@ -1,8 +1,21 @@
 import { Link } from 'react-router-dom'
+import { useRef } from 'react'
 import './Home.css'
 import ImageSlideshow from '../components/ImageSlideshow'
 
 function Home() {
+  const aboutSectionRef = useRef(null)
+
+  const scrollToAbout = (e) => {
+    e.preventDefault()
+    if (aboutSectionRef.current) {
+      aboutSectionRef.current.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  }
+
   return (
     <div className="home">
       <section className="hero">
@@ -22,14 +35,14 @@ function Home() {
             Hello, it's me YasankaRJ. I am a Sri Lankan technical lead with a passion for creating innovative solutions and building amazing user experiences. Explore my work, experience, and projects to learn more about what I do.
           </p>
           <div className="hero-buttons">
-            <a href="#about" className="btn btn-primary">Learn More</a>
+            <button onClick={scrollToAbout} className="btn btn-primary">Learn More</button>
             <Link to="/contact" className="btn btn-secondary">Get In Touch</Link>
           </div>
           </div>
         </div>
       </section>
 
-      <section id="about" className="about-section">
+      <section id="about" ref={aboutSectionRef} className="about-section">
         <div className="container">
           <h2>About Me</h2>
           <div className="about-content">

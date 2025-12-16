@@ -88,6 +88,13 @@
   border: 2px solid transparent;
   cursor: pointer;
   display: inline-block;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button.btn {
+  border: 2px solid transparent;
 }
 
 .btn-primary {
