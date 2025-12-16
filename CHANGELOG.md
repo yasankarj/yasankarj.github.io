@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github-personal/yasankarj/yasankarj.github.io/compare/v1.2.0...v1.2.1) (2025-12-16)
+
+
+### Bug Fixes
+
+* fix the issue of about me page directing to invalid page ([ee8d4ea](https://github-personal/yasankarj/yasankarj.github.io/commit/ee8d4ead4fe8eed5916383baf1f4477b200fbbde))
+
 ## [1.2.0](https://github-personal/yasankarj/yasankarj.github.io/compare/v1.1.0...v1.2.0) (2025-12-16)
 
 
