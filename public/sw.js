@@ -1,11 +1,11 @@
 // Service Worker for caching images
-const CACHE_NAME = 'portfolio-images-v1'
-const IMAGE_CACHE_NAME = 'portfolio-images-cache-v1'
+const CACHE_NAME = 'portfolio-images-v2'
+const IMAGE_CACHE_NAME = 'portfolio-images-cache-v2'
 
 // Images to cache
 const IMAGES_TO_CACHE = [
   '/images/photo1.png',
-  '/images/photo2.jpeg',
+  '/images/photo2.jpg',
   '/images/photo3.JPG',
   '/images/photo4.jpeg',
   '/images/photo5.jpeg'

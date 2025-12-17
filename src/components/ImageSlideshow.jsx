@@ -4,7 +4,7 @@ import './ImageSlideshow.css'
 function ImageSlideshow() {
   const images = [
     '/images/photo1.png',
-    '/images/photo2.jpeg',
+    '/images/photo2.jpg',
     '/images/photo3.JPG',
     '/images/photo4.jpeg',
     '/images/photo5.jpeg'
