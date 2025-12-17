@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github-personal/yasankarj/yasankarj.github.io/compare/v1.2.1...v1.3.0) (2025-12-17)
+
+
+### Features
+
+* update images ([144795c](https://github-personal/yasankarj/yasankarj.github.io/commit/144795cd42dece0c76e09faf9ea69b81755e2339))
+* updated worker files to proper image imports ([b7d8547](https://github-personal/yasankarj/yasankarj.github.io/commit/b7d8547de91d20c9c713e54cef55e4ccfb57ce7a))
+
 ### [1.2.1](https://github-personal/yasankarj/yasankarj.github.io/compare/v1.2.0...v1.2.1) (2025-12-16)
 
 
