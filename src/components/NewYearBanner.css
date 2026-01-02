@@ -1,0 +1,41 @@
+.newyear-banner {
+  width: 100%;
+  background: linear-gradient(90deg, #0f766e, #065f46);
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+.newyear-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.newyear-message {
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: center;
+  padding: 6px 40px 6px 12px;
+}
+
+.newyear-dismiss {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background: transparent;
+  border: none;
+  color: rgba(255,255,255,0.95);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 6px;
+}
+
+@media (max-width: 600px) {
+  .newyear-message { font-size: 14px; padding-right: 36px }
+  .newyear-dismiss { right: 6px; top: 6px }
+}
