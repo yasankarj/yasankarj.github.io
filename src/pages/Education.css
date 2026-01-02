@@ -12,12 +12,12 @@
 }
 
 .education-card {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 12px;
+  background: var(--card-bg);
+  padding: 1.25rem;
+  border-radius: 10px;
   box-shadow: var(--shadow-md);
-  transition: all 0.3s;
-  border-left: 4px solid var(--primary-color);
+}
+  border-left: 4px solid var(--accent-1);
 }
 
 .education-card:hover {
@@ -42,7 +42,7 @@
 }
 
 .education-period {
-  color: var(--primary-color);
+  color: var(--accent-1);
   font-weight: 600;
   white-space: nowrap;
 }
@@ -95,7 +95,7 @@
   content: '✓';
   position: absolute;
   left: 0;
-  color: var(--primary-color);
+  color: var(--accent-1);
   font-weight: bold;
 }
 
