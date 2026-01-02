@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github-personal/yasankarj/yasankarj.github.io/compare/v1.3.1...v1.4.0) (2026-01-02)
+
+
+### Features
+
+* new style imporvements ([10ea388](https://github-personal/yasankarj/yasankarj.github.io/commit/10ea3883dfc6c42ca925c7fce403ff206445a660))
+
 ### [1.3.1](https://github-personal/yasankarj/yasankarj.github.io/compare/v1.3.0...v1.3.1) (2026-01-02)
 
 

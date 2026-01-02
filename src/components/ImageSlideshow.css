@@ -1,12 +1,13 @@
 .slideshow-container {
   position: relative;
   width: 100%;
-  max-width: 500px;
-  height: 500px;
-  border-radius: 16px;
+  /* allow larger viewing area on wide screens */
+  max-width: 760px;
+  height: 560px;
+  border-radius: calc(var(--radius-lg) + 4px);
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-lg);
+  background: linear-gradient(180deg, rgba(6,182,212,0.04), rgba(14,165,164,0.02));
 }
 
 .slideshow-wrapper {
@@ -22,12 +23,14 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 600ms cubic-bezier(.2,.9,.2,1), transform 600ms cubic-bezier(.2,.9,.2,1);
+  transform: scale(1.02);
 }
 
 .slide.active {
   opacity: 1;
   z-index: 1;
+  transform: scale(1);
 }
 
 .slide img {
@@ -40,16 +43,16 @@
 .image-placeholder {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+  background: linear-gradient(180deg, rgba(15,23,42,0.06), rgba(15,23,42,0.03));
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 1.5rem;
+  color: var(--text-primary);
+  font-size: 1.1rem;
   font-weight: 600;
   text-align: center;
-  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border: 1px dashed rgba(15,23,42,0.06);
 }
 
 .image-placeholder small {
@@ -63,87 +66,72 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  border: none;
+  background: rgba(15,23,42,0.55);
   color: white;
-  font-size: 2.5rem;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
   cursor: pointer;
   z-index: 10;
-  transition: all 0.3s;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), opacity var(--transition-fast);
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 1;
+  opacity: 0.9;
 }
 
 .slideshow-arrow:hover {
-  background: rgba(255, 255, 255, 0.3);
-  transform: translateY(-50%) scale(1.1);
+  transform: translateY(-50%) scale(1.04);
+  box-shadow: var(--shadow-md);
+  opacity: 1;
 }
 
-.slideshow-arrow-left {
-  left: 15px;
-}
-
-.slideshow-arrow-right {
-  right: 15px;
-}
+.slideshow-arrow-left { left: 14px }
+.slideshow-arrow-right { right: 14px }
 
 .slideshow-dots {
   position: absolute;
-  bottom: 20px;
+  bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 10px;
+  gap: 8px;
   z-index: 10;
+  align-items: center;
 }
-
 .dot {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  border: 2px solid white;
-  background: transparent;
+  border: 1px solid rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.08);
   cursor: pointer;
-  transition: all 0.3s;
+  transition: transform var(--transition-fast), background var(--transition-fast), border-color var(--transition-fast);
   padding: 0;
 }
 
-.dot:hover {
-  background: rgba(255, 255, 255, 0.5);
-  transform: scale(1.2);
-}
+.dot:hover { transform: scale(1.15) }
 
 .dot.active {
   background: white;
-  transform: scale(1.3);
+  border-color: white;
+  transform: scale(1.25);
+}
+}
+
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0 }
+
+@media (max-width: 1200px) {
+  .slideshow-container { max-width: 620px; height: 460px }
 }
 
 @media (max-width: 968px) {
-  .slideshow-container {
-    max-width: 100%;
-    height: 400px;
-  }
+  .slideshow-container { max-width: 100%; height: 420px }
 }
 
 @media (max-width: 768px) {
-  .slideshow-container {
-    height: 300px;
-  }
-
-  .slideshow-arrow {
-    width: 40px;
-    height: 40px;
-    font-size: 2rem;
-  }
-
-  .image-placeholder {
-    font-size: 1.2rem;
-  }
+  .slideshow-container { height: 320px }
+  .slideshow-arrow { width: 40px; height: 40px }
 }
 

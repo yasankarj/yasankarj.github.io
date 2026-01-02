@@ -11,8 +11,8 @@
 }
 
 .project-card {
-  background: white;
-  padding: 2rem;
+  background: var(--card-bg);
+  padding: 1.25rem;
   border-radius: 12px;
   box-shadow: var(--shadow-md);
   transition: all 0.3s;
@@ -24,7 +24,7 @@
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-xl);
-  border-color: var(--primary-color);
+  border-color: var(--accent-1);
 }
 
 .project-icon {
@@ -55,7 +55,7 @@
 }
 
 .tech-tag {
-  background: var(--bg-tertiary);
+  background: var(--bg-secondary);
   color: var(--text-primary);
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
@@ -65,7 +65,7 @@
 }
 
 .project-link {
-  color: var(--primary-color);
+  color: var(--accent-1);
   font-weight: 600;
   transition: all 0.2s;
   display: inline-block;
@@ -73,7 +73,7 @@
 }
 
 .project-link:hover {
-  color: var(--primary-dark);
+  color: var(--accent-2);
   transform: translateX(5px);
 }
 

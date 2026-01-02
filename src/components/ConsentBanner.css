@@ -59,12 +59,12 @@
 }
 
 .consent-button.accept {
-  background: var(--primary-color);
+  background: var(--accent-1);
   color: white;
 }
 
 .consent-button.accept:hover {
-  background: var(--primary-dark);
+  background: var(--accent-2);
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
 }
@@ -76,7 +76,7 @@
 }
 
 .consent-button.decline:hover {
-  background: var(--bg-tertiary);
+  background: var(--bg-secondary);
   border-color: var(--text-secondary);
   color: var(--text-primary);
 }
