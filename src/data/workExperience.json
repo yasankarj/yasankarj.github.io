@@ -8,12 +8,10 @@
       "location": "Colombo, Sri Lanka",
       "shortDescription": "After working more than half a decade in Product Based Software Company, working with 99X, which is a service based software company, I have gained a lot of experience in cutting edge technologies and best practices.",
       "longDescription": [
-        "Led development of scalable web applications using React and Node.js",
+        "Led development of scalable web applications using PHP Symfony, Go (Golang), Angular, React, and Node.js",
         "Mentored junior developers and conducted code reviews",
         "Collaborated with cross-functional teams to deliver high-quality products",
-        "Improved application performance by 40% through optimization",
-        "Architected microservices infrastructure for better scalability",
-        "Implemented CI/CD pipelines reducing deployment time by 50%"
+        "Architected microservices infrastructure for better scalability"
       ],
       "techStack": ["Go (Golang)", "Node.js", "React", "AWS", "Docker", "GitLab CI/CD", "Kubernetes", "MySQL", "linear.app", "PHP", "Symfony", "Angular", "TypeScript", "Doctrine", "MySQL", "Webhook integrations"],
       "projects": [
