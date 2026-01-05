@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github-personal/yasankarj/yasankarj.github.io/compare/v1.4.0...v1.5.0) (2026-01-05)
+
+
+### Features
+
+* add courses page with dummy data ([027cac3](https://github-personal/yasankarj/yasankarj.github.io/commit/027cac3d9a329a3feaa2eda98703bce285d1b6d2))
+* imporved course description view ([1883826](https://github-personal/yasankarj/yasankarj.github.io/commit/18838264c380c6e541975a4437b089d315d4ceff))
+* improved course topics view ([28ae0d8](https://github-personal/yasankarj/yasankarj.github.io/commit/28ae0d85b2b544fc3caddc76097f5505ae041273))
+* real data - phase 1 ([924e669](https://github-personal/yasankarj/yasankarj.github.io/commit/924e6692a7ee80e3e4a060f6d7a76e82d57d6a16))
+
 ## [1.4.0](https://github-personal/yasankarj/yasankarj.github.io/compare/v1.3.1...v1.4.0) (2026-01-02)
 
 
