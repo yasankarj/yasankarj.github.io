@@ -53,6 +53,7 @@
   border-radius: 12px;
   box-shadow: var(--shadow-md);
   transition: all 0.3s;
+  border-left: 4px solid var(--accent-1);
 }
 
 .timeline-content:hover {
