@@ -5,104 +5,49 @@
       "platform": "Udemy",
       "description": "Identity management, also known as identity and access management, is a framework of policies and technologies for ensuring that the proper people in an enterprise have the appropriate access to technology resources.",
       "topics": [
-        "LDAP protocol and directory services",
-        "SAML authentication and federation",
-        "OAuth 2.0 authorization flows",
-        "OpenID Connect identity verification"
+        "What is identity and access management?",
+        "What is SSO and How it Works?",
+        "Open ID Connect",
+        "What is SAML and How it Works?",
+        "What is OAuth and How it Works?",
+        "What is LDAP and How it Works?",
+        "Privilege Identity Management"
       ],
       "status": "completed",
-      "certificateLink": "https://udemy.com/certificate/javascript2024"
+      "certificateLink": "https://www.udemy.com/certificate/UC-fc6a4bfa-3ddd-4970-9d50-9dc506b99296/"
     },
     {
-      "name": "React - The Complete Guide",
+      "name": "Git & GitHub For Beginners - Master Git and GitHub (2025)",
       "platform": "Udemy",
       "description": "Master React with comprehensive coverage of hooks, context API, routing, and state management patterns for building modern web applications.",
       "topics": [
-        "React hooks and functional components",
-        "Context API and state management patterns",
-        "React Router for navigation",
-        "Component lifecycle and performance optimization"
+        "Intorduction to Version Control System",
+        "Learning Git Essentials",
+        "Github: First Steps and basics",
+        "Github: Commands & Functionalities",
+        "Version Control Premium Content: Visualization, Flow, and Commands",
+        "Branching - Full Introduction to merging [Branches in Version Control]",
+        "Merging - Process, Steps, and Merger Techniques",
+        "Conflict Resolution",
+        "Intermediate level: Going Further",
+        "Gitlab: Remote version control systems ",
+        "SVN (Subversion)"
       ],
       "status": "completed",
-      "certificateLink": "https://udemy.com/certificate/react-guide"
+      "certificateLink": "https://www.udemy.com/certificate/UC-ae1cef21-3c95-4af1-b609-02ee3c6b42b7/"
     },
     {
-      "name": "Advanced CSS & Sass",
+      "name": "Software Architecture & Design of Modern Large Scale Systems",
       "platform": "Udemy",
-      "description": "Deep dive into modern CSS techniques and Sass preprocessing for creating responsive, maintainable, and scalable stylesheets.",
+      "description": "Become a Software Architect or Technical Lead by Mastering Software Architecture, System Design & Big Data Processing.\n",
       "topics": [
-        "CSS Grid and Flexbox layouts",
-        "Advanced animations and transitions",
-        "Sass preprocessing and mixins",
-        "Responsive design techniques"
+        "Software Architecture Fundamentals",
+        "System Requirements & Architectural Drivers",
+        "Quality Attributes & Tactics",
+        "API Design"
       ],
-      "status": "completed",
+      "status": "ongoing",
       "certificateLink": "https://udemy.com/certificate/css-sass"
-    },
-    {
-      "name": "Node.js - The Complete Guide",
-      "platform": "Udemy",
-      "description": "Build scalable backend applications with Node.js, Express, and MongoDB for developing full-stack web applications.",
-      "topics": [
-        "Build scalable backend applications",
-        "Express.js framework and middleware",
-        "MongoDB database integration",
-        "RESTful API development"
-      ],
-      "status": "completed",
-      "certificateLink": "https://udemy.com/certificate/nodejs-complete"
-    },
-    {
-      "name": "Web Design for Beginners",
-      "platform": "Coursera",
-      "description": "Foundational web design principles including layout, color theory, typography, and responsive design for modern web.",
-      "topics": [
-        "Web design principles and best practices",
-        "Color theory and typography",
-        "Responsive design fundamentals",
-        "User experience and accessibility"
-      ],
-      "status": "completed",
-      "certificateLink": "https://coursera.org/certificate/web-design"
-    },
-    {
-      "name": "Python for Data Science",
-      "platform": "DataCamp",
-      "description": "Data analysis and visualization using pandas, NumPy, and Matplotlib for extracting insights from datasets.",
-      "topics": [
-        "Data analysis using pandas",
-        "NumPy for numerical computing",
-        "Data visualization with Matplotlib",
-        "Statistical analysis fundamentals"
-      ],
-      "status": "ongoing",
-      "certificateLink": null
-    },
-    {
-      "name": "Git & GitHub Complete Guide",
-      "platform": "Udemy",
-      "description": "Version control mastery with Git workflows, branching strategies, and collaborative development practices.",
-      "topics": [
-        "Git version control fundamentals",
-        "Branching strategies and workflows",
-        "Collaborative development practices",
-        "GitHub integration and deployment"
-      ],
-      "status": "completed",
-      "certificateLink": "https://udemy.com/certificate/git-github"
-    },
-    {
-      "name": "TypeScript Masterclass",
-      "platform": "Udemy",
-      "description": "Advanced TypeScript concepts including generics, decorators, and type system mastery for building robust applications.",
-      "topics": [
-        "Advanced TypeScript type system",
-        "Generics and conditional types",
-        "Decorators and metadata",
-        "TypeScript with React and Node.js"
-      ],
-      "status": "ongoing",
-      "certificateLink": null
     }
   ]
 }
