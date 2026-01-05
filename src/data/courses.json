@@ -1,13 +1,14 @@
 {
   "courses": [
     {
-      "name": "The Complete JavaScript Course 2024",
+      "name": "Identity & Access Management - Learn LDAP, SAML, OAuth, OpenID",
       "platform": "Udemy",
-      "description": [
-        "Comprehensive coverage of ES6+ features",
-        "Async/await and promise handling",
-        "Modern JavaScript best practices",
-        "DOM manipulation and event handling"
+      "description": "Identity management, also known as identity and access management, is a framework of policies and technologies for ensuring that the proper people in an enterprise have the appropriate access to technology resources.",
+      "topics": [
+        "LDAP protocol and directory services",
+        "SAML authentication and federation",
+        "OAuth 2.0 authorization flows",
+        "OpenID Connect identity verification"
       ],
       "status": "completed",
       "certificateLink": "https://udemy.com/certificate/javascript2024"
@@ -15,8 +16,9 @@
     {
       "name": "React - The Complete Guide",
       "platform": "Udemy",
-      "description": [
-        "Master React hooks and functional components",
+      "description": "Master React with comprehensive coverage of hooks, context API, routing, and state management patterns for building modern web applications.",
+      "topics": [
+        "React hooks and functional components",
         "Context API and state management patterns",
         "React Router for navigation",
         "Component lifecycle and performance optimization"
@@ -27,7 +29,8 @@
     {
       "name": "Advanced CSS & Sass",
       "platform": "Udemy",
-      "description": [
+      "description": "Deep dive into modern CSS techniques and Sass preprocessing for creating responsive, maintainable, and scalable stylesheets.",
+      "topics": [
         "CSS Grid and Flexbox layouts",
         "Advanced animations and transitions",
         "Sass preprocessing and mixins",
@@ -39,7 +42,8 @@
     {
       "name": "Node.js - The Complete Guide",
       "platform": "Udemy",
-      "description": [
+      "description": "Build scalable backend applications with Node.js, Express, and MongoDB for developing full-stack web applications.",
+      "topics": [
         "Build scalable backend applications",
         "Express.js framework and middleware",
         "MongoDB database integration",
@@ -51,7 +55,8 @@
     {
       "name": "Web Design for Beginners",
       "platform": "Coursera",
-      "description": [
+      "description": "Foundational web design principles including layout, color theory, typography, and responsive design for modern web.",
+      "topics": [
         "Web design principles and best practices",
         "Color theory and typography",
         "Responsive design fundamentals",
@@ -63,7 +68,8 @@
     {
       "name": "Python for Data Science",
       "platform": "DataCamp",
-      "description": [
+      "description": "Data analysis and visualization using pandas, NumPy, and Matplotlib for extracting insights from datasets.",
+      "topics": [
         "Data analysis using pandas",
         "NumPy for numerical computing",
         "Data visualization with Matplotlib",
@@ -75,7 +81,8 @@
     {
       "name": "Git & GitHub Complete Guide",
       "platform": "Udemy",
-      "description": [
+      "description": "Version control mastery with Git workflows, branching strategies, and collaborative development practices.",
+      "topics": [
         "Git version control fundamentals",
         "Branching strategies and workflows",
         "Collaborative development practices",
@@ -87,7 +94,8 @@
     {
       "name": "TypeScript Masterclass",
       "platform": "Udemy",
-      "description": [
+      "description": "Advanced TypeScript concepts including generics, decorators, and type system mastery for building robust applications.",
+      "topics": [
         "Advanced TypeScript type system",
         "Generics and conditional types",
         "Decorators and metadata",

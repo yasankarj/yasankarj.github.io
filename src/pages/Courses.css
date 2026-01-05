@@ -252,6 +252,8 @@
 }
 
 .modal-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px solid var(--border-color);
@@ -259,32 +261,35 @@
 
 .modal-description strong {
   color: var(--text-primary);
+}
+
+.modal-topics {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.modal-topics strong {
+  color: var(--text-primary);
   display: block;
   margin-bottom: 0.75rem;
 }
 
-.description-intro {
-  font-style: italic;
-  color: var(--text-secondary);
-  margin-bottom: 1rem;
-  line-height: 1.6;
-}
-
-.description-list {
+.topics-list {
   list-style: none;
   padding: 0;
   margin: 0;
   color: var(--text-secondary);
 }
 
-.description-list li {
+.topics-list li {
   padding-left: 1.5rem;
   position: relative;
   margin-bottom: 0.5rem;
   line-height: 1.6;
 }
 
-.description-list li::before {
+.topics-list li::before {
   content: '•';
   position: absolute;
   left: 0;

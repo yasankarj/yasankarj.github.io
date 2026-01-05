@@ -84,15 +84,21 @@ function Courses() {
                   {selectedCourse.status === 'completed' ? '✓ Completed' : '◆ Ongoing'}
                 </span>
               </p>
-              <div className="modal-description">
+              <p className="modal-description">
                 <strong>Description:</strong>
-                <p className="description-intro">{selectedCourse.description[0]}</p>
-                <ul className="description-list">
-                  {selectedCourse.description.slice(1).map((point, i) => (
-                    <li key={i}>{point}</li>
-                  ))}
-                </ul>
-              </div>
+                <br />
+                {selectedCourse.description}
+              </p>
+              {selectedCourse.topics && selectedCourse.topics.length > 0 && (
+                <div className="modal-topics">
+                  <strong>Topics Covered</strong>
+                  <ul className="topics-list">
+                    {selectedCourse.topics.map((topic, i) => (
+                      <li key={i}>{topic}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
             <div className="modal-actions">
               {selectedCourse.certificateLink && selectedCourse.status === 'completed' && (
