@@ -3,56 +3,96 @@
     {
       "name": "The Complete JavaScript Course 2024",
       "platform": "Udemy",
-      "description": "Comprehensive JavaScript course covering ES6+, async/await, and modern JavaScript practices.",
+      "description": [
+        "Comprehensive coverage of ES6+ features",
+        "Async/await and promise handling",
+        "Modern JavaScript best practices",
+        "DOM manipulation and event handling"
+      ],
       "status": "completed",
       "certificateLink": "https://udemy.com/certificate/javascript2024"
     },
     {
       "name": "React - The Complete Guide",
       "platform": "Udemy",
-      "description": "Master React with hooks, context, routing, and state management patterns.",
+      "description": [
+        "Master React hooks and functional components",
+        "Context API and state management patterns",
+        "React Router for navigation",
+        "Component lifecycle and performance optimization"
+      ],
       "status": "completed",
       "certificateLink": "https://udemy.com/certificate/react-guide"
     },
     {
       "name": "Advanced CSS & Sass",
       "platform": "Udemy",
-      "description": "Deep dive into CSS Grid, Flexbox, animations, and Sass preprocessing.",
+      "description": [
+        "CSS Grid and Flexbox layouts",
+        "Advanced animations and transitions",
+        "Sass preprocessing and mixins",
+        "Responsive design techniques"
+      ],
       "status": "completed",
       "certificateLink": "https://udemy.com/certificate/css-sass"
     },
     {
       "name": "Node.js - The Complete Guide",
       "platform": "Udemy",
-      "description": "Build scalable backend applications with Node.js, Express, and MongoDB.",
+      "description": [
+        "Build scalable backend applications",
+        "Express.js framework and middleware",
+        "MongoDB database integration",
+        "RESTful API development"
+      ],
       "status": "completed",
       "certificateLink": "https://udemy.com/certificate/nodejs-complete"
     },
     {
       "name": "Web Design for Beginners",
       "platform": "Coursera",
-      "description": "Foundational web design principles including layout, color theory, and responsive design.",
+      "description": [
+        "Web design principles and best practices",
+        "Color theory and typography",
+        "Responsive design fundamentals",
+        "User experience and accessibility"
+      ],
       "status": "completed",
       "certificateLink": "https://coursera.org/certificate/web-design"
     },
     {
       "name": "Python for Data Science",
       "platform": "DataCamp",
-      "description": "Data analysis and visualization using pandas, NumPy, and Matplotlib.",
+      "description": [
+        "Data analysis using pandas",
+        "NumPy for numerical computing",
+        "Data visualization with Matplotlib",
+        "Statistical analysis fundamentals"
+      ],
       "status": "ongoing",
       "certificateLink": null
     },
     {
       "name": "Git & GitHub Complete Guide",
       "platform": "Udemy",
-      "description": "Version control mastery with Git workflows, branching strategies, and collaboration.",
+      "description": [
+        "Git version control fundamentals",
+        "Branching strategies and workflows",
+        "Collaborative development practices",
+        "GitHub integration and deployment"
+      ],
       "status": "completed",
       "certificateLink": "https://udemy.com/certificate/git-github"
     },
     {
       "name": "TypeScript Masterclass",
       "platform": "Udemy",
-      "description": "Advanced TypeScript concepts, generics, decorators, and type system mastery.",
+      "description": [
+        "Advanced TypeScript type system",
+        "Generics and conditional types",
+        "Decorators and metadata",
+        "TypeScript with React and Node.js"
+      ],
       "status": "ongoing",
       "certificateLink": null
     }
