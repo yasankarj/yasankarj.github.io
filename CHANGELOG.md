@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github-personal/yasankarj/yasankarj.github.io/compare/v1.5.0...v1.6.0) (2026-01-27)
+
+
+### Features
+
+* remove new year banner ([c678976](https://github-personal/yasankarj/yasankarj.github.io/commit/c678976ae608a9794e2ad58f2a4e54c83db4270a))
+
 ## [1.5.0](https://github-personal/yasankarj/yasankarj.github.io/compare/v1.4.0...v1.5.0) (2026-01-05)
 
 
