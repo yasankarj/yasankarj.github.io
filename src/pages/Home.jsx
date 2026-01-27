@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { useRef } from 'react'
 import './Home.css'
 import ImageSlideshow from '../components/ImageSlideshow'
-import NewYearBanner from '../components/NewYearBanner'
 
 function Home() {
   const aboutSectionRef = useRef(null)
@@ -19,8 +18,6 @@ function Home() {
 
   return (
     <div className="home">
-      {/* New Year banner: remove the import and this component line to remove from the home page */}
-      <NewYearBanner />
       <section className="hero">
         <div className="hero-container">
           <div className="hero-slideshow">
