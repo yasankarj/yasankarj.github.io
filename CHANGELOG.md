@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.1](https://github-personal/yasankarj/yasankarj.github.io/compare/v1.6.0...v1.6.1) (2026-03-25)
+
+
+### Bug Fixes
+
+* imporve security policies ([d3f2bf9](https://github-personal/yasankarj/yasankarj.github.io/commit/d3f2bf9fe3c52cabf929487614f9f79407889481))
+* style improvement-at2 ([ed6dec7](https://github-personal/yasankarj/yasankarj.github.io/commit/ed6dec7e894dc6d937da39a755ae754bf1d60031))
+* style improvements ([2af1035](https://github-personal/yasankarj/yasankarj.github.io/commit/2af10359263eb0e2aeee46a1f3a17c43bdbde8c7))
+
 ## [1.6.0](https://github-personal/yasankarj/yasankarj.github.io/compare/v1.5.0...v1.6.0) (2026-01-27)
 
 
