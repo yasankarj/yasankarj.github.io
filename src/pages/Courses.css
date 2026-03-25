@@ -14,20 +14,22 @@
 
 .search-input {
   width: 100%;
-  max-width: 500px;
-  padding: 0.75rem 1rem;
+  max-width: 540px;
+  padding: 0.85rem 1rem;
   font-size: 1rem;
-  border: 2px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.9);
   color: var(--text-primary);
   outline: none;
   transition: all 0.2s;
   font-family: inherit;
+  box-shadow: var(--shadow-sm);
 }
 
 .search-input:focus {
-  border-color: var(--accent-1);
+  border-color: rgba(8, 145, 178, 0.5);
+  box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.14);
 }
 
 .search-input::placeholder {
@@ -46,18 +48,21 @@
 
 .course-card {
   background: var(--card-bg);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   padding: 1.5rem;
   box-shadow: var(--shadow-md);
-  transition: all 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   border-left: 4px solid var(--accent-1);
+  border-right: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .course-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
 }
 
 .course-name {
@@ -112,7 +117,7 @@
   padding: 0.75rem 1rem;
   background: var(--bg-secondary);
   color: var(--text-primary);
-  border: 2px solid var(--accent-1);
+  border: 1px solid rgba(8, 145, 178, 0.5);
   border-radius: var(--radius-sm);
   font-weight: 600;
   font-size: 0.9rem;
@@ -168,7 +173,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(4px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,9 +188,10 @@
   padding: 2rem;
   max-width: 600px;
   width: 100%;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-xl);
   position: relative;
   animation: slideUp 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 @keyframes slideUp {

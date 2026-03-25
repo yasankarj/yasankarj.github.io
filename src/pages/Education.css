@@ -13,15 +13,19 @@
 
 .education-card {
   background: var(--card-bg);
-  padding: 1.25rem;
-  border-radius: 10px;
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   border-left: 4px solid var(--accent-1);
+  border-right: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
 }
 
 .education-card:hover {
   box-shadow: var(--shadow-xl);
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 
 .education-header {

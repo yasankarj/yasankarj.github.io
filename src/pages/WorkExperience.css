@@ -50,15 +50,18 @@
 .timeline-content {
   background: var(--card-bg);
   padding: 2rem;
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
-  transition: all 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-left: 4px solid var(--accent-1);
+  border-right: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .timeline-content:hover {
   box-shadow: var(--shadow-xl);
-  transform: translateX(5px);
+  transform: translateX(5px) translateY(-2px);
 }
 
 .experience-header {
@@ -132,7 +135,7 @@
   margin-top: 1rem;
   padding: 0.6rem 1.5rem;
   background: transparent;
-  border: 2px solid var(--accent-1);
+  border: 1px solid rgba(8, 145, 178, 0.5);
   color: var(--accent-1);
   border-radius: 8px;
   font-weight: 600;
@@ -185,6 +188,7 @@
   position: relative;
   box-shadow: var(--shadow-xl);
   animation: slideUp 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.65);
 }
 
 @keyframes slideUp {
