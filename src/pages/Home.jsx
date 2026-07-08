@@ -2,6 +2,25 @@ import { Link } from 'react-router-dom'
 import { useRef } from 'react'
 import './Home.css'
 
+const skillGroups = [
+  {
+    title: 'Languages',
+    skills: ['PHP', 'Go', 'JavaScript', 'TypeScript', 'SQL', 'HTML/CSS']
+  },
+  {
+    title: 'Frameworks & Libraries',
+    skills: ['React', 'React Native', 'Angular']
+  },
+  {
+    title: 'Cloud & DevOps',
+    skills: ['AWS', 'Docker', 'Kubernetes', 'Git']
+  },
+  {
+    title: 'Ways of Working',
+    skills: ['Scrum', 'Kanban']
+  }
+]
+
 function Home() {
   const aboutSectionRef = useRef(null)
 
@@ -51,7 +70,7 @@ function Home() {
           <h2>About Me</h2>
           <div className="about-content">
             <p>
-              I'm a technical lead with closer to nine years of experience in the industry (excluding my internship). I have worked with a variety of technologies and frameworks, and I am always looking to learn new things.
+              I'm a technical lead with more than nine years of experience in the industry (excluding my internship). I have worked with a variety of technologies and frameworks, and I am always looking to learn new things.
             </p>
             <p>
               With my experience on both service based and product based companies, I have a good understanding of the different approaches to software development.
@@ -67,21 +86,16 @@ function Home() {
         <div className="container">
           <h2>Skills & Technologies</h2>
           <div className="skills-grid">
-            <div className="skill-card">PHP</div>
-            <div className="skill-card">Go</div>
-            <div className="skill-card">JavaScript</div>
-            <div className="skill-card">TypeScript</div>
-            <div className="skill-card">CSS/HTML</div>
-            <div className="skill-card">Angular</div>
-            <div className="skill-card">React</div>
-            <div className="skill-card">React Native</div>
-            <div className="skill-card">Git</div>
-            <div className="skill-card">SQL</div>
-            <div className="skill-card">AWS</div>
-            <div className="skill-card">Docker</div>
-            <div className="skill-card">Kubernetes</div>
-            <div className="skill-card">Scrum</div>
-            <div className="skill-card">Kanban</div>
+            {skillGroups.map((group) => (
+              <div key={group.title} className="skill-group">
+                <h3 className="skill-group-title">{group.title}</h3>
+                <ul className="skill-tags">
+                  {group.skills.map((skill) => (
+                    <li key={skill} className="skill-tag">{skill}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </section>
