@@ -1,5 +1,43 @@
 .work-experience {
-  padding: 2rem 0 4rem;
+  position: relative;
+  overflow-x: clip;
+  background: #05050a;
+  color: #f2f2f7;
+  min-height: 100vh;
+  margin-top: -7rem;
+  padding: calc(7rem + 2rem) 0 4rem;
+}
+
+.work-experience::before,
+.work-experience::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.35;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.work-experience::before {
+  width: 480px;
+  height: 480px;
+  top: -180px;
+  left: -180px;
+  background: radial-gradient(circle, #0891b2, transparent 70%);
+}
+
+.work-experience::after {
+  width: 420px;
+  height: 420px;
+  top: 320px;
+  right: -200px;
+  background: radial-gradient(circle, #a855f7, transparent 70%);
+}
+
+.work-experience .container {
+  position: relative;
+  z-index: 1;
 }
 
 /* ---------- Page header ---------- */
@@ -12,7 +50,10 @@
   display: block;
   font-size: 0.85rem;
   font-weight: 700;
-  color: var(--accent-1);
+  background: linear-gradient(100deg, #22d3ee, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
@@ -23,17 +64,17 @@
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.1;
-  color: var(--text-primary);
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 .accent-dot {
-  color: var(--accent-1);
+  color: #22d3ee;
 }
 
 .page-intro {
   font-size: clamp(1rem, 2vw, 1.2rem);
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.6);
   max-width: 40rem;
   line-height: 1.7;
 }
@@ -53,7 +94,7 @@
   bottom: 12px;
   width: 2px;
   border-radius: 2px;
-  background: rgba(8, 145, 178, 0.18);
+  background: linear-gradient(180deg, rgba(34, 211, 238, 0.35), rgba(167, 139, 250, 0.15));
 }
 
 .experience-item {
@@ -74,9 +115,9 @@
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  background: var(--accent-1);
-  border: 3px solid #fafbfc;
-  box-shadow: 0 0 0 1px rgba(8, 145, 178, 0.25);
+  background: #22d3ee;
+  border: 3px solid #05050a;
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.4), 0 0 14px rgba(34, 211, 238, 0.5);
   z-index: 1;
 }
 
@@ -90,19 +131,19 @@
 .experience-period {
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #ffffff;
 }
 
 .experience-location {
   font-size: 0.9rem;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .experience-title {
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: -0.01em;
-  color: var(--text-primary);
+  color: #ffffff;
   margin-bottom: 0.25rem;
 }
 
@@ -113,7 +154,7 @@
 }
 
 .experience-company a {
-  color: var(--accent-1);
+  color: #22d3ee;
 }
 
 .experience-company a:hover {
@@ -121,7 +162,7 @@
 }
 
 .experience-short-description {
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.6);
   line-height: 1.75;
   max-width: 42rem;
   margin-bottom: 1.25rem;
@@ -137,17 +178,17 @@
 .tech-tag {
   padding: 0.38rem 0.85rem;
   border-radius: 10px;
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.68);
   font-size: 0.85rem;
   font-weight: 600;
   line-height: 1.4;
 }
 
 .tech-tag-more {
-  color: var(--accent-1);
-  border-color: rgba(8, 145, 178, 0.3);
+  color: #22d3ee;
+  border-color: rgba(34, 211, 238, 0.35);
 }
 
 .view-more-btn {
@@ -160,7 +201,7 @@
   font-family: inherit;
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--accent-1);
+  color: #22d3ee;
   cursor: pointer;
 }
 
@@ -177,8 +218,8 @@
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(15, 23, 42, 0.5);
-  backdrop-filter: blur(6px);
+  background: rgba(2, 2, 6, 0.7);
+  backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -193,7 +234,8 @@
 }
 
 .modal-content {
-  background: var(--card-bg);
+  background: #0c0c14;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 2.75rem;
   max-width: 720px;
@@ -201,7 +243,7 @@
   max-height: 88vh;
   overflow-y: auto;
   position: relative;
-  box-shadow: var(--shadow-xl);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
   animation: slideUp 0.25s ease;
 }
 
@@ -220,13 +262,13 @@
   position: absolute;
   top: 1.1rem;
   right: 1.1rem;
-  background: var(--bg-tertiary);
+  background: rgba(255, 255, 255, 0.06);
   border: none;
   width: 36px;
   height: 36px;
   border-radius: 50%;
   font-size: 1.4rem;
-  color: var(--text-primary);
+  color: #f2f2f7;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -236,14 +278,14 @@
 }
 
 .modal-close:hover {
-  background: var(--border-color);
+  background: rgba(255, 255, 255, 0.14);
 }
 
 .modal-period {
   display: block;
   font-size: 0.85rem;
   font-weight: 700;
-  color: var(--accent-1);
+  color: #22d3ee;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 0.6rem;
@@ -253,7 +295,7 @@
   font-size: 1.7rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  color: var(--text-primary);
+  color: #ffffff;
   margin-bottom: 0.35rem;
 }
 
@@ -264,7 +306,7 @@
 }
 
 .modal-company a {
-  color: var(--accent-1);
+  color: #22d3ee;
 }
 
 .modal-company a:hover {
@@ -272,7 +314,7 @@
 }
 
 .modal-location {
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.45);
   font-weight: 500;
 }
 
@@ -285,10 +327,10 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--text-primary);
+  color: #ffffff;
   margin-bottom: 1rem;
   padding-bottom: 0.6rem;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .modal-list {
@@ -297,7 +339,7 @@
 }
 
 .modal-list li {
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.62);
   margin-bottom: 0.65rem;
   padding-left: 1.3rem;
   position: relative;
@@ -312,14 +354,14 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--accent-1);
-  opacity: 0.6;
+  background: #22d3ee;
+  opacity: 0.7;
 }
 
 .project-detail {
   margin-bottom: 2rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .project-detail:last-child {
@@ -331,7 +373,7 @@
 .project-name {
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #ffffff;
   margin: 0 0 0.85rem 0;
 }
 
@@ -346,7 +388,8 @@
 
 @media (max-width: 768px) {
   .work-experience {
-    padding: 1rem 0 3rem;
+    margin-top: -6rem;
+    padding: calc(6rem + 1.5rem) 0 3rem;
   }
 
   .page-header {
