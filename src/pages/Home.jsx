@@ -27,7 +27,7 @@ function Home() {
   const scrollToAbout = (e) => {
     e.preventDefault()
     if (aboutSectionRef.current) {
-      aboutSectionRef.current.scrollIntoView({ 
+      aboutSectionRef.current.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       })
@@ -37,7 +37,27 @@ function Home() {
   return (
     <div className="home">
       <section className="hero">
-        <div className="hero-container">
+        <div className="container hero-container">
+          <div className="hero-content">
+            <span className="hero-badge">
+              <span className="badge-dot" aria-hidden="true" />
+              Technical Lead · Sri Lanka
+            </span>
+            <h1 className="hero-title">
+              Yasanka Jayawardane<span className="accent-dot">.</span>
+            </h1>
+            <p className="hero-tagline">
+              I lead engineering teams and build full-stack products — more than
+              nine years of turning complex problems into clean, reliable
+              software.
+            </p>
+            <div className="hero-buttons">
+              <Link to="/contact" className="btn btn-primary">Get in touch</Link>
+              <button onClick={scrollToAbout} className="btn btn-ghost">
+                More about me <span aria-hidden="true">↓</span>
+              </button>
+            </div>
+          </div>
           <div className="hero-photo">
             <img
               src="/images/photo1.png"
@@ -46,30 +66,17 @@ function Home() {
               decoding="async"
             />
           </div>
-          <div className="hero-content">
-          <h1 className="hero-title">
-            <span className="greeting">Hello, I'm</span>
-            <span className="name">Yasanka Jayawardane</span>
-          </h1>
-          <p className="hero-subtitle">
-            Technical Lead | Full Stack Developer | Software Engineer | Problem Solver
-          </p>
-          <p className="hero-description">
-            Hello, it's me YasankaRJ. I am a Sri Lankan technical lead with a passion for creating innovative solutions and building amazing user experiences. Explore my work, experience, and projects to learn more about what I do.
-          </p>
-          <div className="hero-buttons">
-            <button onClick={scrollToAbout} className="btn btn-primary">Learn More</button>
-            <Link to="/contact" className="btn btn-secondary">Get In Touch</Link>
-          </div>
-          </div>
         </div>
       </section>
 
       <section id="about" ref={aboutSectionRef} className="about-section">
-        <div className="container">
-          <h2>About Me</h2>
+        <div className="container section-grid">
+          <div className="section-label">
+            <span className="section-index">01</span>
+            <h2>About</h2>
+          </div>
           <div className="about-content">
-            <p>
+            <p className="lead">
               I'm a technical lead with more than nine years of experience in the industry (excluding my internship). I have worked with a variety of technologies and frameworks, and I am always looking to learn new things.
             </p>
             <p>
@@ -83,8 +90,11 @@ function Home() {
       </section>
 
       <section className="skills-section">
-        <div className="container">
-          <h2>Skills & Technologies</h2>
+        <div className="container section-grid">
+          <div className="section-label">
+            <span className="section-index">02</span>
+            <h2>Skills &amp; Technologies</h2>
+          </div>
           <div className="skills-grid">
             {skillGroups.map((group) => (
               <div key={group.title} className="skill-group">
@@ -99,9 +109,20 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <section className="cta-section">
+        <div className="container">
+          <div className="cta-panel">
+            <div>
+              <h2>Have a project or a role in mind?</h2>
+              <p>I'm always happy to talk about engineering, leadership, or ideas worth building.</p>
+            </div>
+            <Link to="/contact" className="btn btn-light">Get in touch</Link>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
 
 export default Home
-
