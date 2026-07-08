@@ -1,6 +1,28 @@
 {
   "courses": [
     {
+      "name": "Vue - The Complete Guide (incl. Router & COmpostion API",
+      "platform": "Udemy",
+      "description": "Vue.js is an awesome JavaScript Framework for building Frontend Applications! VueJS mixes the Best of Angular + React!",
+      "topics": [
+        "What is VueJS and Why would you use it?",
+        "The Basics (including the basic Syntax, Understanding Templates and much more!),",
+        "How to Output Reactive Data & Listen to Events",
+        "Interacting with DOM (Rendering Lists, Conditionally attaching/ detaching Elements ...)",
+        "Setting up a Development Environment and Workflow",
+        "Using Components (and what Components are to begin with)",
+        "A Deep Dive Look Behind the Scenes of Vue",
+        "Binding to Form Inputs",
+        "Sending Http Requests to Backend APIs",
+        "Authentication & Vue",
+        "How to make your App more Beautiful with Animations and Transitions",
+        "How to create an awesome Single-Page-Application (SPA) with Routing",
+        "How to improve State Management by using Vuex"
+      ],
+      "status": "completed",
+      "certificateLink": "https://www.udemy.com/certificate/UC-2d12af35-1190-4cc6-8870-f04ed18e993e/"
+    },
+    {
       "name": "Identity & Access Management - Learn LDAP, SAML, OAuth, OpenID",
       "platform": "Udemy",
       "description": "Identity management, also known as identity and access management, is a framework of policies and technologies for ensuring that the proper people in an enterprise have the appropriate access to technology resources.",
