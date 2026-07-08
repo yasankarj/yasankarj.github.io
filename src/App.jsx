@@ -5,7 +5,6 @@ import Home from './pages/Home'
 import WorkExperience from './pages/WorkExperience'
 import Education from './pages/Education'
 import Courses from './pages/Courses'
-import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import './App.css'
 import { useEffect } from "react";
