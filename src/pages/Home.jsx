@@ -122,7 +122,6 @@ function Home() {
                 decoding="async"
               />
             </div>
-            <span className="hero-photo-chip">Open to opportunities</span>
           </div>
         </div>
 
