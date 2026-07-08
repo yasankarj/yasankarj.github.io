@@ -1,7 +1,7 @@
 {
   "courses": [
     {
-      "name": "Vue - The Complete Guide (incl. Router & COmpostion API",
+      "name": "Vue - The Complete Guide (incl. Router & Composition API)",
       "platform": "Udemy",
       "description": "Vue.js is an awesome JavaScript Framework for building Frontend Applications! VueJS mixes the Best of Angular + React!",
       "topics": [
@@ -41,7 +41,7 @@
     {
       "name": "Git & GitHub For Beginners - Master Git and GitHub (2025)",
       "platform": "Udemy",
-      "description": "Master React with comprehensive coverage of hooks, context API, routing, and state management patterns for building modern web applications.",
+      "description": "Master Practical Key Concepts and Workflow of Git and Git Hub.",
       "topics": [
         "Intorduction to Version Control System",
         "Learning Git Essentials",

@@ -42,8 +42,8 @@ function Contact() {
               return '';
             })
             .filter(msg => msg.length > 0);
-          
-          setStatus(sanitizedErrors.length > 0 
+
+          setStatus(sanitizedErrors.length > 0
             ? 'Oops! There was an error: ' + sanitizedErrors.join(', ')
             : 'Oops! An unknown error occurred.')
         } else {
@@ -60,53 +60,46 @@ function Contact() {
   return (
     <div className="contact">
       <div className="container">
-        <h1 className="page-title">Get In Touch</h1>
-        <p className="page-subtitle">
-          I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
-        </p>
-        
+        <header className="page-header">
+          <span className="page-eyebrow">Contact</span>
+          <h1 className="page-heading">Get in touch<span className="accent-dot">.</span></h1>
+          <p className="page-intro">
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+          </p>
+        </header>
+
         <div className="contact-content">
           <div className="contact-info">
-            <h2>Contact Information</h2>
             <div className="info-item">
-              <span className="info-icon">📧</span>
-              <div>
-                <h3>Email</h3>
-                <p>yasankarj.online@gmail.com</p>
-              </div>
+              <h3>Email</h3>
+              <p><a href="mailto:yasankarj.online@gmail.com">yasankarj.online@gmail.com</a></p>
             </div>
             <div className="info-item">
-              <span className="info-icon">📍</span>
-              <div>
-                <h3>Location (Work)</h3>
-                <p>Piliyandala, Colombo, Sri Lanka</p>
-              </div>
+              <h3>Location (Work)</h3>
+              <p>Piliyandala, Colombo, Sri Lanka</p>
             </div>
             <div className="info-item">
-              <span className="info-icon">📍</span>
-              <div>
-                <h3>Location (Permanent)</h3>
-                <p>Badulla, Sri Lanka</p>
-              </div>
+              <h3>Location (Permanent)</h3>
+              <p>Badulla, Sri Lanka</p>
             </div>
-            <div className="social-links">
+            <div className="info-item">
               <h3>Connect with me</h3>
               <div className="social-icons">
                 <a href="https://www.linkedin.com/in/yasankajayawardane/" target="_blank" rel="noopener noreferrer" className="social-link">
-                  LinkedIn
+                  LinkedIn <span aria-hidden="true">↗</span>
                 </a>
                 <a href="https://github.com/yasankarj" target="_blank" rel="noopener noreferrer" className="social-link">
-                  GitHub
+                  GitHub <span aria-hidden="true">↗</span>
                 </a>
                 <a href="https://www.tiktok.com/@yasankarj" target="_blank" rel="noopener noreferrer" className="social-link">
-                  Tiktok
+                  TikTok <span aria-hidden="true">↗</span>
                 </a>
               </div>
             </div>
           </div>
 
-          <form 
-            className="contact-form" 
+          <form
+            className="contact-form"
             action="https://formspree.io/f/xwpgqnkg"
             method="POST"
             onSubmit={handleSubmit}
@@ -122,6 +115,7 @@ function Contact() {
                 type="email"
                 id="email"
                 name="email"
+                placeholder="you@example.com"
                 required
               />
             </div>
@@ -131,11 +125,12 @@ function Contact() {
                 id="message"
                 name="message"
                 rows="6"
+                placeholder="What would you like to talk about?"
                 required
               ></textarea>
             </div>
-            <button 
-              type="submit" 
+            <button
+              type="submit"
               className="submit-btn"
               disabled={isSubmitting}
             >
@@ -149,4 +144,3 @@ function Contact() {
 }
 
 export default Contact
-
