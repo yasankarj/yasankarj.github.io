@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](///compare/v1.6.2...v2.0.0) (2026-07-08)
+
+
+### Features
+
+* home page revamp 84c947c
+* revamped Courses and Contact pages bd6f467
+* revamped Education page b518e96
+* revamped work experience page b3c013c
+
 ### [1.6.2](///compare/v1.6.1...v1.6.2) (2026-07-08)
 
 ### [1.6.1](https://github-personal/yasankarj/yasankarj.github.io/compare/v1.6.0...v1.6.1) (2026-03-25)
