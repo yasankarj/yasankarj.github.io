@@ -11,8 +11,20 @@ import { useEffect } from "react";
 import { pageview } from "./analytics";
 import { getConsent } from "./utils/consent";
 
+const PAGE_TITLES = {
+  '/': 'Yasanka Jayawardane | Technical Lead & Full Stack Developer',
+  '/work-experience': 'Work Experience | Yasanka Jayawardane',
+  '/education': 'Education | Yasanka Jayawardane',
+  '/courses': 'Courses | Yasanka Jayawardane',
+  '/contact': 'Contact | Yasanka Jayawardane',
+};
+
 function AppContent() {
   const location = useLocation();
+
+  useEffect(() => {
+    document.title = PAGE_TITLES[location.pathname] || PAGE_TITLES['/'];
+  }, [location]);
 
   useEffect(() => {
     // Only track pageview if user has consented
