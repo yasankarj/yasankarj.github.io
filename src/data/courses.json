@@ -68,8 +68,19 @@
         "Quality Attributes & Tactics",
         "API Design"
       ],
-      "status": "ongoing",
-      "certificateLink": "https://udemy.com/certificate/css-sass"
+      "status": "ongoing"
+    },
+    {
+      "name": "Microsoft Power BI Desktop for Business Intelligence",
+      "platform": "Udemy",
+      "description": "Master Power BI Desktop for data prep, data analysis, data visualization & dashboard design",
+      "topics": [
+        "Connecting & Shaping Data",
+        "Creating a Relational Data Model",
+        "Adding Calculated Fields with DAX",
+        "Visualizing Data with Reports"
+      ],
+      "status": "ongoing"
     }
   ]
 }
