@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useRef } from 'react'
 import './Home.css'
-import ImageSlideshow from '../components/ImageSlideshow'
 
 function Home() {
   const aboutSectionRef = useRef(null)
@@ -20,8 +19,13 @@ function Home() {
     <div className="home">
       <section className="hero">
         <div className="hero-container">
-          <div className="hero-slideshow">
-            <ImageSlideshow />
+          <div className="hero-photo">
+            <img
+              src="/images/photo1.png"
+              alt="Yasanka Jayawardane"
+              loading="eager"
+              decoding="async"
+            />
           </div>
           <div className="hero-content">
           <h1 className="hero-title">
