@@ -75,12 +75,8 @@ function Contact() {
               <p><a href="mailto:yasankarj.online@gmail.com">yasankarj.online@gmail.com</a></p>
             </div>
             <div className="info-item">
-              <h3>Location (Work)</h3>
-              <p>Piliyandala, Colombo, Sri Lanka</p>
-            </div>
-            <div className="info-item">
-              <h3>Location (Permanent)</h3>
-              <p>Badulla, Sri Lanka</p>
+              <h3>Location</h3>
+              <p>Colombo, Sri Lanka</p>
             </div>
             <div className="info-item">
               <h3>Connect with me</h3>
