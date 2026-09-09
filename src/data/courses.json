@@ -1,6 +1,32 @@
 {
   "courses": [
     {
+      "name": "Software Architecture & Design of Modern Large Scale Systems",
+      "platform": "Udemy",
+      "description": "Become a Software Architect or Technical Lead by Mastering Software Architecture, System Design & Big Data Processing.\n",
+      "topics": [
+        "Software Architecture Fundamentals",
+        "System Requirements & Architectural Drivers",
+        "Quality Attributes & Tactics",
+        "API Design"
+      ],
+      "status": "completed",
+      "certificateLink": "https://www.udemy.com/certificate/UC-69bfcfbd-a9ac-4e93-82d3-df77cdd14a2b/"
+    },
+    {
+      "name": "Microsoft Power BI Desktop for Business Intelligence",
+      "platform": "Udemy",
+      "description": "Master Power BI Desktop for data prep, data analysis, data visualization & dashboard design",
+      "topics": [
+        "Connecting & Shaping Data",
+        "Creating a Relational Data Model",
+        "Adding Calculated Fields with DAX",
+        "Visualizing Data with Reports"
+      ],
+      "status": "completed",
+      "certificateLink": "https://www.udemy.com/certificate/UC-63fca066-4f92-44a6-b5ae-5bbd8d97df30/"
+    },
+    {
       "name": "Vue - The Complete Guide (incl. Router & Composition API)",
       "platform": "Udemy",
       "description": "Vue.js is an awesome JavaScript Framework for building Frontend Applications! VueJS mixes the Best of Angular + React!",
@@ -57,30 +83,6 @@
       ],
       "status": "completed",
       "certificateLink": "https://www.udemy.com/certificate/UC-ae1cef21-3c95-4af1-b609-02ee3c6b42b7/"
-    },
-    {
-      "name": "Software Architecture & Design of Modern Large Scale Systems",
-      "platform": "Udemy",
-      "description": "Become a Software Architect or Technical Lead by Mastering Software Architecture, System Design & Big Data Processing.\n",
-      "topics": [
-        "Software Architecture Fundamentals",
-        "System Requirements & Architectural Drivers",
-        "Quality Attributes & Tactics",
-        "API Design"
-      ],
-      "status": "ongoing"
-    },
-    {
-      "name": "Microsoft Power BI Desktop for Business Intelligence",
-      "platform": "Udemy",
-      "description": "Master Power BI Desktop for data prep, data analysis, data visualization & dashboard design",
-      "topics": [
-        "Connecting & Shaping Data",
-        "Creating a Relational Data Model",
-        "Adding Calculated Fields with DAX",
-        "Visualizing Data with Reports"
-      ],
-      "status": "ongoing"
     }
   ]
 }
